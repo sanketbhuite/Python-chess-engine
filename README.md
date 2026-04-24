@@ -2,7 +2,6 @@
 
 > A fully playable local chess game built from scratch in Python — move generation, legal filtering, special rules, and a Tkinter GUI.
 
----
 
 <!-- PHOTO 1: Add a screenshot of the GUI board here -->
 <!-- ![Chess Board Screenshot](path/to/screenshot.png) -->
@@ -22,7 +21,7 @@ dist/main.exe  ← double click and go
 ### 🐍 Run from source
 
 ```bash
-py main.py
+python main.py
 ```
 
 That's it. The board opens. Click and play.
@@ -53,7 +52,7 @@ Output lands in `dist/main.exe`.
 ## 📁 Project Structure
 
 ```
-chess-engine/
+Python-chess-engine/
 ├── main.py                  # Entry point
 ├── engine/
 │   ├── board.py             # Board state, make/undo move, castling & en passant state
@@ -62,6 +61,7 @@ chess-engine/
 │   └── gui.py               # Tkinter board + player interaction
 └── tests/
     ├── test_castling.py
+    ├── test_game_state.py
     └── test_pawn_promotion.py
 ```
 
@@ -118,7 +118,6 @@ All six piece types — pawns, knights, bishops, rooks, queens, kings.
 - Arrow-key move history navigation
 - Promotion popup with piece choice
 
----
 
 <!-- PHOTO 2: Add a screenshot of the promotion popup or check highlight here -->
 <!-- ![Promotion Popup Screenshot](path/to/promotion.png) -->
